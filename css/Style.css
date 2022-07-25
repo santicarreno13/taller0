@@ -24,7 +24,10 @@ body{
   h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
-/* Barra de navegación*/
+
+
+
+/* Barra de navegación */
 nav{
     display: flex;
     align-items: center;
@@ -44,6 +47,22 @@ nav{
     .logo img{
         height: 3rem;
     }
+    /* Info */
+    #info{
+        display: flex;
+    }
+    .info-ubicacion{
+    width: 60%;
+    padding: 80px;
+    font-size: 1.3em;
+    }
+    .info-imagen{ 
+        padding: 40px;
+        display: flex;
+        float: right;
+        height: 250px;  
+    }
+    /* features */
     #features{
         background: url(../img/index/bg-features.png);
         color: white;
@@ -61,6 +80,7 @@ nav{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
     }
     .feature{
         width: 25%;
