@@ -219,6 +219,7 @@ nav{
           .cards-container{
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
           }
           .card{
             width: 400px;
@@ -233,6 +234,7 @@ nav{
             left: 0;
             top: 0;
             z-index: 1;
+            
           }
           .card-info{
             display: flex;
@@ -257,12 +259,60 @@ nav{
             text-align: center;
             color: #fff;
             margin: auto;
+            font-size: 50px;
           }
         #a{
-            background-image: url(../img/opinion/vector-comentarios.png);
+            background-image: url(../img/opinion/vector-comentarios.svg);
             height: 150px;
             margin-bottom: -50px;
+            
           }
+          footer{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-image: url(../img/opinion/vector-comentarios.svg);
+            color: #fff;
+            padding: 1em;
+            margin-top: 7em;
+          }
+          footer div{
+            max-width: 300px;
+
+          }
+          #icons{
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+          }
+
+          footer span{
+            display: flex;
+            align-content: flex-start;
+            gap: 16px;
+          }
+          footer span p{
+            margin: 0;
+          }
+          footer span i{
+            margin-top: 6px;
+          }
+          #reservar p {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            
+          }
+          #reservar{
+            position:fixed;
+            right: 0;
+            background-color: var(--Magenta);
+            top: 30%;
+            z-index: 5;
+            border:none;
+            border-radius: 4px;
+            color: #fff;
+          } 
+          
         
           
           
