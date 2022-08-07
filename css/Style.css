@@ -57,6 +57,7 @@ nav{
     /* Info */
     #info{
         display: flex;
+        flex-wrap: wrap;
     }
     .info-ubicacion{
     width: 60%;
@@ -203,7 +204,69 @@ nav{
         }
         .navbar-button{
             background-color:var(--azuloscuro);
-        }       
+        } 
+        hr{
+            height: 2px;
+            background-color: var(--azuloscuro);
+            width: 70%;
+            
+        }  
+          .maps{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+          } 
+          .cards-container{
+            display: flex;
+            justify-content: space-around;
+          }
+          .card{
+            width: 400px;
+            padding: 2%;
+            background: rgb(72,214,237);
+            background: linear-gradient(90deg, rgba(72,214,237,1) 0%, rgba(51,122,183,1) 74%); 
+            color: #fff;  
+          }
+          .bg-card{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+          }
+          .card-info{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 40px;
+            z-index: 2;
+            font-size: 17px;
+            font-weight: bold;
+          }
+          .card-info img{
+            width: 65px;
+            border-radius: 50%;
+          }
+          .card-info div p{
+            margin: 0;
+          }
+          .card div p{
+            line-height: 20px;
+          }
+          #comentarios h2{
+            text-align: center;
+            color: #fff;
+            margin: auto;
+          }
+        #a{
+            background-image: url(../img/opinion/vector-comentarios.png);
+            height: 150px;
+            margin-bottom: -50px;
+          }
+        
+          
+          
+    
     }
     /*Resolución notebooks*/
 @media screen and (min-width: 1308px){
